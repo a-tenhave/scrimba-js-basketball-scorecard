@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+        <div id="score-stats-container">
+            <div class="score-group" id="home">
+                <h3>HOME</h3>
+                <div class="score-points">
+                    <h1 id="home-score-el">0</h1>
+                </div>
+                <div class="buttons">
+                    <button id="score-1-home-btn" class="btn score-btn" onclick="addOneHome()" disabled="true">+1</button>
+                    <button id="score-2-home-btn" class="btn score-btn" onclick="addTwoHome()" disabled="true">+2</button>
+                    <button id="score-3-home-btn" class="btn score-btn" onclick="addThreeHome()" disabled="true">+3</button>
+                </div>
+                <div class="stats">
+                    <div id="home-stats-1" class="stat">0</div>
+                    <div id="home-stats-2" class="stat">0</div>
+                    <div id="home-stats-3" class="stat">0</div>
+                </div>
+            </div>
+            <div id="game-info">
+                <div id="timer">
+                    <div id="timer-minutes">00</div>:<div id="timer-seconds">00</div>
+                </div>
+                    <button id="start-btn" class="btn game-btn" onclick="countDown()" disabled=true>
+                        <span>Start</span>
+                    </button>
+                    <button id="pause-btn" class="btn game-btn" onclick="pauseCountDown()" disabled=true>
+                        <span>Pause</span>
+                    </button>
+                    <button id="resume-btn" class="btn game-btn" onclick="resumeCountDown()" disabled=true>
+                        <span>Resume</span>
+                    </button>
+                    <button id="new-game-btn" class="btn game-btn" onclick="startNewGame()">
+                        <span>New game</span>
+                    </button>
+            </div>
+            <div class="score-group" id="guest">
+                <h3>GUEST</h3>
+                <div class="score-points">
+                    <h1 id="guest-score-el">0</h1>
+                </div>
+                <div class="buttons">
+                    <button id="score-1-guest-btn" class="btn score-btn" onclick="addOneGuest()" disabled="true">+1</button>
+                    <button id="score-2-guest-btn" class="btn score-btn" onclick="addTwoGuest()" disabled="true">+2</button>
+                    <button id="score-3-guest-btn" class="btn score-btn" onclick="addThreeGuest()" disabled="true">+3</button>
+                </div>
+                <div class="stats">
+                    <div id="guest-stats-1" class="stat">0</div>
+                    <div id="guest-stats-2" class="stat">0</div>
+                    <div id="guest-stats-3" class="stat">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="index.js"></script>
+    </body>
+</html>

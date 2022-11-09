@@ -1,0 +1,132 @@
+@font-face {
+    font-family: CursedTimerUlil;
+    src: url("CursedTimerUlil-Aznm.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    background-color: #ee6730;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+#score-stats-container {
+    display: flex;
+    justify-content: space-evenly;
+    color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+#home {
+    border: 5px solid transparent;
+}
+
+#guest {
+    border: 5px solid transparent;
+}
+
+.score-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0px 10px 10px 10px;
+}
+
+.score-points {
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    color: #f94f6d;
+    font-family: CursedTimerUlil;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #080001;
+    border: solid 2px #080001;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.btn:disabled {
+    opacity: 0.6;
+}
+
+.score-btn {
+    height: 45px;
+    width: 45px;
+    font-size: 18px;
+}
+
+#game-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#timer {
+    background-color: #080001;
+    color: #f94f6d;
+    font-family: CursedTimerUlil;
+    font-size: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.game-btn {
+    font-size: 20px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.stat {
+    background-color: #080001;
+    color: #f94f6d;
+    width: 45px;
+    height: 45px;
+    font-family: CursedTimerUlil;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
